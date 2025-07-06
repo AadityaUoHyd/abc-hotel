@@ -233,7 +233,6 @@ app-roomresult.room-card:hover {
 }
 
 /* Browse All Rooms Button */
-/* Browse All Rooms Button */
 .browse-all {
   text-align: center;
   margin: 3rem auto;
@@ -572,8 +571,10 @@ app-roomresult.room-card:hover {
 
 /* Special Hut House Section */
 .hut-house {
-  margin: 60px;
+  margin: 60px auto;
+  padding: 0 15px;
   text-align: center;
+  max-width: 1200px; /* Aligns with other sections like .services-grid */
 }
 
 .hut-house-description {
@@ -582,6 +583,7 @@ app-roomresult.room-card:hover {
   max-width: 600px;
   margin: 0 auto 20px;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hut-house-grid {
@@ -592,9 +594,7 @@ app-roomresult.room-card:hover {
   align-items: center;
   justify-items: center;
   margin: 0 auto;
-
 }
-
 
 .hut-house-card {
   display: flex;
@@ -606,11 +606,14 @@ app-roomresult.room-card:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   background-color: #fff;
   text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limits card width for consistency */
 }
 
 .hut-house-card img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px; /* Desktop image size */
+  height: auto; /* Maintains aspect ratio */
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -621,13 +624,69 @@ app-roomresult.room-card:hover {
   font-weight: 900;
   color: #007F86;
   margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hut-house-card .description {
   font-size: 14px;
   color: #444;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .hut-house {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+
+  .hut-house-grid {
+    max-width: 500px;
+  }
+
+  .hut-house-card img {
+    max-width: 250px; /* Smaller image for tablet */
+  }
+
+  .hut-house-card {
+    padding: 15px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .hut-house {
+    margin: 20px auto;
+    padding: 0 5px;
+  }
+
+  .hut-house-grid {
+    max-width: 100%; /* Full width for mobile */
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .hut-house-card {
+    padding: 10px;
+    max-width: 100%; /* Fit mobile viewport */
+  }
+
+  .hut-house-card img {
+    max-width: 100%; /* Full width for mobile */
+    height: auto;
+  }
+
+  .hut-house-description {
+    font-size: 14px;
+  }
+
+  .hut-house-card .title {
+    font-size: 16px;
+  }
+
+  .hut-house-card .description {
+    font-size: 12px;
+  }
+}
 
 
 
