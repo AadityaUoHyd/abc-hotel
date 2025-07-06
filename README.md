@@ -1,6 +1,8 @@
 # ABC-Hotel Web Application
 A personalized hotel room booking platform for ABC-Hotel. This repo contains only frontend code.
 
+![](https://raw.githubusercontent.com/AadityaUoHyd/abc-hotel-goa/refs/heads/main/screenshot.png)
+
 ## Overview
 The ABC-Hotel Web Application is a full-stack hotel management and booking platform 
 built with Angular (frontend) and Spring Boot (backend). It showcases the luxurious 
