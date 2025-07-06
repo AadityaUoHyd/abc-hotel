@@ -1,5 +1,5 @@
 export const environment = {
-    production: true,
-    apiUrl: 'https://abc-hotel-backend.onrender.app/api',
+    production: false,
+    apiUrl: 'http://localhost:8080/api',
     razorpayKey: 'rzp_test_damILfDssLwsZg'
 };
