@@ -1,0 +1,24 @@
+<nav>
+    <div class="brand">
+        <a routerLink="/" class="logo-link">
+            <img src="assets/images/logo.png" alt="ABC-Hotel Logo" class="logo">
+            ABC-Hotel
+        </a>
+        <button class="menu-toggle" (click)="isMenuOpen = !isMenuOpen">☰</button>
+    </div>
+
+    <ul [class.open]="isMenuOpen">
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/rooms" routerLinkActive="active">Rooms</a></li>
+        <li><a routerLink="/find-booking" routerLinkActive="active">Find Booking</a></li>
+
+        <li *ngIf="isCustomer"><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+        <li *ngIf="isAdmin"><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
+        <li *ngIf="!isAuthemticated"><a routerLink="/login" routerLinkActive="active">Login</a></li>
+        <li *ngIf="!isAuthemticated"><a routerLink="/register" routerLinkActive="active">Register</a></li>
+
+        <li *ngIf="isAuthemticated">
+            <a href="#" (click)="handleLogout()" class="logout-link">Logout</a>
+        </li>
+    </ul>
+</nav>

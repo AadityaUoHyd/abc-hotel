@@ -1,0 +1,19 @@
+h1 {
+  color: #007F86;
+  margin-top: 2rem;
+}
+/* styles.css or global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1; /* this takes the remaining vertical space */
+}

@@ -1,0 +1,23 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.success {
+    color: #4caf50;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.logo-img{
+    width: 200px;
+    height: 200px;
+}

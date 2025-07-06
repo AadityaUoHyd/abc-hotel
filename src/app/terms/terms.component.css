@@ -1,0 +1,41 @@
+.terms-page {
+    font-family: 'Poppins', sans-serif;
+    margin: 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 50px;
+    color: #007F86;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.color {
+    color: #FF7F50;
+}
+
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.terms-content h2 {
+    font-weight: 800;
+    color: #007F86;
+    margin: 20px 0 10px;
+}
+
+.terms-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

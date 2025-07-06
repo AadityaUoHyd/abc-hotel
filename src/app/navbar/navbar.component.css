@@ -1,0 +1,141 @@
+/* Base styling (unchanged) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px 25px 75px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand a.logo-link {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007F86;
+    text-decoration: none;
+}
+
+.brand .logo {
+    width: 40px; /* Default size for desktop */
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.brand .logo:hover {
+    transform: scale(1.2); /* Enlarge logo by 20% on hover */
+}
+
+/* Toggle button hidden on desktop */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #007F86;
+    cursor: pointer;
+}
+
+/* Menu list */
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.5s;
+}
+
+li a:hover {
+    color: teal;
+    text-decoration: underline;
+}
+
+li a.active {
+    color: #FF7F50;
+}
+
+nav ul li a.logout-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Medium devices (tablets) */
+    nav {
+        padding: 20px 40px;
+    }
+
+    .brand .logo {
+        width: 35px; /* Slightly smaller for tablets */
+        height: 35px;
+    }
+
+    .brand a.logo-link {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    li {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile devices */
+    nav {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    ul.open {
+        display: flex;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .brand .logo {
+        width: 30px; /* Smaller for mobile */
+        height: 30px;
+    }
+
+    .brand a.logo-link {
+        font-size: 20px; /* Smaller font for mobile */
+    }
+}

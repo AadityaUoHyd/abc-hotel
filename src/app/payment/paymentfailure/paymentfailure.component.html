@@ -1,0 +1,7 @@
+<div class="payment-status">
+    <h1>Payment Failed</h1>
+    <p>Unfortunately, your payment for booking reference <strong>{{ bookingReference }}</strong> could not be processed.</p>
+    <p>Please try again or contact our customer support at +91 (999) 999-9999.</p>
+    <a routerLink="/payment/{{ bookingReference }}/{{ amount }}" class="button">Try Again</a>
+    <a routerLink="/" class="button secondary">Go to Home</a>
+</div>
