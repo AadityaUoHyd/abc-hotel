@@ -158,4 +158,4 @@ Admin credentials : aadi@yopmail.com/Password#123
 User Credentials : santosh@yopmail.com/Password#123
 
 ## Live link (if deployed)
-https://abc-hotel.vercel.app
+https://abc-hotel-goa.vercel.app
