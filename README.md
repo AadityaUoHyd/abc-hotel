@@ -153,9 +153,7 @@ abc-hotel-app/
 ## Angular Deploy
 Provide these during vercel build.
 ```
-ng build --configuration=production
-dist/abc-hotel
-npm install --force
+Install Command : npm install --force
 ```
 And click on deploy.
 

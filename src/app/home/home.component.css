@@ -296,28 +296,35 @@ app-roomresult.room-card:hover {
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .browse-all {
-    margin: 1.5rem 10px;
+    margin: 1rem 10px;
+    padding: 0 5px;
   }
-
   .building {
+    margin: 0;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
   }
-
   .building img {
-    max-width: 100%; /* Full width for mobile */
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
   }
-
   .browse-button {
     padding: 0.5rem 1rem;
     font-size: 14px;
   }
-
   .browse-all h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
-
 /* About Us Section */
 .about-us {
   margin: 60px;
@@ -427,6 +434,48 @@ app-roomresult.room-card:hover {
   font-size: 14px;
   font-weight: 600;
   color: #007F86;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .testimonials {
+    margin: 20px auto; /* Reduced margin for mobile */
+    padding: 15px; /* Reduced padding */
+    max-width: 100%; /* Fit viewport */
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 15px; /* Smaller gap */
+    max-width: 100%; /* Full width */
+  }
+
+  .testimonial-card {
+    padding: 10px; /* Reduced padding */
+    max-width: 100%; /* Fit viewport */
+  }
+
+  .testimonial-card img {
+    width: 60px; /* Smaller image for mobile */
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+
+  .testimonial-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-details .quote {
+    font-size: 12px; /* Smaller font for mobile */
+    margin-bottom: 8px;
+  }
+
+  .testimonial-details .author {
+    font-size: 12px; /* Smaller font */
+  }
 }
 
 /* Top Places to Visit in Goa Section */
@@ -567,6 +616,61 @@ app-roomresult.room-card:hover {
 .speciality-card .description {
   font-size: 14px;
   color: #444;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  /* Search Room Section */
+  .searchroom {
+    margin: 10px 0;
+    padding: 0 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ABC-Hotel Speciality Section */
+  .speciality {
+    margin: 20px 0;
+    padding: 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .speciality-description {
+    font-size: 12px;
+    max-width: 100%;
+    margin: 0 auto 10px;
+  }
+
+  .speciality-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+    justify-items: center;
+  }
+
+  .speciality-card {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .speciality-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .speciality-card .title {
+    font-size: 16px;
+  }
+
+  .speciality-card .description {
+    font-size: 12px;
+  }
 }
 
 /* Special Hut House Section */
@@ -737,4 +841,103 @@ app-roomresult.room-card:hover {
 .building .description {
   font-size: 14px;
   color: #444;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  /* Search Room Section */
+  .searchroom {
+    margin: 10px 0; /* Vertical margin only */
+    padding: 0 5px;
+    width: 100%; /* Full viewport width */
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .searchroom * {
+    max-width: 100%; /* Constrain child elements (e.g., inputs, buttons) */
+    box-sizing: border-box;
+  }
+
+  /* ABC-Hotel Speciality Section */
+  .speciality {
+    margin: 20px 0; /* Vertical margin only */
+    padding: 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent overflow */
+  }
+
+  .speciality-description {
+    font-size: 12px; /* Smaller font */
+    max-width: 100%;
+    margin: 0 auto 10px;
+    padding: 0 5px;
+  }
+
+  .speciality-grid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px;
+    max-width: 100%;
+    justify-items: center; /* Center cards */
+  }
+
+  .speciality-card {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .speciality-card img {
+    width: 100%;
+    max-width: 150px; /* Smaller image */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .speciality-card .title {
+    font-size: 16px;
+  }
+
+  .speciality-card .description {
+    font-size: 12px;
+    overflow-wrap: break-word; /* Ensure text wraps */
+  }
+
+  /* Room Results Grid */
+  .room-results-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 10px;
+    padding: 10px; /* Reduced padding */
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent overflow */
+  }
+
+  app-roomresult.room-card {
+    aspect-ratio: auto; /* Remove fixed aspect ratio for flexibility */
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+  }
+
+  app-roomresult.room-card img {
+    width: 100%;
+    max-width: 200px; /* Constrain image size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  app-roomresult.room-card * {
+    max-width: 100%; /* Constrain all child elements */
+    box-sizing: border-box;
+    font-size: 12px; /* Smaller text for mobile */
+  }
 }
