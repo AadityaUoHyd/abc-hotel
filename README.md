@@ -150,6 +150,15 @@ abc-hotel-app/
 - Push to the branch (git push origin feature/your-feature).
 - Open a pull request with a detailed description.
 
+## Angular Deploy
+Provide these during vercel build.
+```
+ng build --configuration=production
+dist/abc-hotel
+npm install --force
+```
+And click on deploy.
+
 ## License
 This project is licensed under the MIT License.
 
